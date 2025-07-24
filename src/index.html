@@ -7,6 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 
+  <script>document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.solve-problem-section-main-div');
+    const navButtons = document.querySelectorAll('.nav-button');
+
+    function showCard(index) {
+      cards.forEach(card => {
+        card.classList.remove('active');
+      });
+      navButtons.forEach(button => {
+        button.classList.remove('active');
+      });
+
+      if (cards[index]) {
+        cards[index].classList.add('active');
+      }
+      if (navButtons[index]) {
+        navButtons[index].classList.add('active');
+      }
+    }
+
+    navButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetIndex = parseInt(button.dataset.targetCard);
+        showCard(targetIndex);
+      });
+    });
+
+    showCard(0);
+  });</script>
 </head>
 
 <body>
@@ -174,21 +203,61 @@
 
   <section class="solve-problem-section">
     <p class="p1">See how we solve <br>problems, <span>right on target</span></p>
-    <div class="solve-problem-section-main-div">
-      <div class="solve-problem-section-left-side">
-        <h2>Medtronic</h2>
-        <p class="p1">
-          "We have used services from Xurya for most of our<br>
-          stations, this is our strategic step to continue to increase<br> the number of solar panel usage for our
-          stations, we are<br> very satisfied with the services from Xurya."</p>
-        <button class="b2">View case study</button>
-        <p class="p2">Jeniffer Kolobaly - <span>CTO EV Medtronic</span></p>
-      </div>
-      <div class="solve-problem-section-right-side">
-        <img src="/solve-problem-section.png">
 
+    <div class="cards-wrapper">
+      <div class="solve-problem-section-main-div active" data-card="0">
+        <div class="solve-problem-section-left-side">
+          <h2 class="card-title">Medtronic</h2>
+          <p class="p1 card-quote">
+            "We have used services from Xurya for most of our<br>
+            stations, this is our strategic step to continue to increase<br> the number of solar panel usage for our
+            stations, we are<br> very satisfied with the services from Xurya."
+          </p>
+          <button class="b2">View case study</button>
+          <p class="p2 card-author">Jeniffer Kolobaly - <span>CTO EV Medtronic</span></p>
+        </div>
+        <div class="solve-problem-section-right-side">
+          <img src="/solve-problem-section.png" alt="Solar Carport">
+        </div>
       </div>
+
+      <div class="solve-problem-section-main-div" data-card="1">
+        <div class="solve-problem-section-left-side">
+          <h2 class="card-title">Telia Cygate</h2>
+          <p class="p1 card-quote">
+            "Housing in the future really needs clean and reliable<br>
+            energy sources, Xurya really helps us to continue<br> developing our renewable energy."
+          </p>
+          <button class="b2">View case study</button>
+          <p class="p2 card-author">Manahan Mana - <span>CTO Hyung Motor</span></p>
+        </div>
+        <div class="solve-problem-section-right-side">
+          <img src="/solar-roof.png" alt="Solar Roof">
+        </div>
+      </div>
+
+      <div class="solve-problem-section-main-div" data-card="2">
+        <div class="solve-problem-section-left-side">
+          <h2 class="card-title">Orange Business</h2>
+          <p class="p1 card-quote">
+            "Our partnership with Xurya has significantly boosted<br>
+            our energy efficiency and reduced our carbon footprint.<br> Highly recommend their innovative solutions."
+          </p>
+          <button class="b2">Learn More</button>
+          <p class="p2 card-author">Jean-Luc Picard - <span>Head of Innovation, Orange</span></p>
+        </div>
+        <div class="solve-problem-section-right-side">
+          <img src="/wind-power.png" alt="Wind Power">
+        </div>
+      </div>
+
     </div>
+    <div class="card-navigation-buttons">
+      <button class="nav-button active" data-target-card="0"></button>
+      <button class="nav-button" data-target-card="1"></button>
+      <button class="nav-button" data-target-card="2"></button>
+    </div>
+
   </section>
 
 </main>
