@@ -550,3 +550,156 @@ button:hover {
 
   object-fit: cover;
 }
+
+footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer-section-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #e0e0e0;
+  font-family: 'Aeonik', sans-serif;
+}
+
+.footer-section-left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #8D959D;
+}
+
+.footer-section-left-side div {
+  display: flex;
+  gap: 20px;
+}
+
+
+.footer-section-right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.footer-section-right-side button {
+  padding: 18px;
+  background-color: white;
+  border: none;
+  color: #1E1E1E;
+  border-radius: 30px;
+  font-family: 'Aeonik', sans-serif;
+  width: 30%;
+  font-size: 15px;
+  font-weight: 400;
+
+}
+
+.footer-section-right-side button:hover {
+  background-color: #8D959D;
+}
+
+.footer-section-top-section {
+  display: flex;
+  gap: 130px;
+  padding-top: 100px;
+}
+
+.footer-main-description {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.footer-section-left-side span {
+  color: #F2F4F4;
+}
+
+.footer-section-left-side-bottom p {
+  font-size: 15px;
+  font-weight: 100;
+
+}
+
+.footer-section-bottom-section {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px
+
+}
+
+.footer-section-bottom-section-top img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: black;
+}
+
+.footer-section-bottom-section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 360px;
+}
+
+.footer-section-bottom-section-top nav a {
+  color: #e0e0e0;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.social-icons {
+  display: flex;
+  margin: 0
+}
+
+.footer-logo-container {
+  display: flex;
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  margin: 5px;
+  font-weight: 100;
+  font-size: 13px;
+  align-items: center;
+}
+
+.footer-logo-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.footer-section-bottom-section-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: #8D959D;
+  font-family: 'Aeonik', sans-serif;
+}
+
+.footer-section-bottom-section-bottom div {
+  display: flex;
+  gap: 20px;
+
+}
+
+.footer-section-bottom-section-bottom div a {
+  color: #8D959D;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.tick img {
+  width: 20px;
+  height: 20px;
+
+}
