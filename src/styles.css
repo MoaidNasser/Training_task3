@@ -90,9 +90,12 @@ button:hover {
 
 .main-description-div {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 25%;
   left: 7%;
   font-family: 'Arial', sans-serif;
+  gap: 30px;
 }
 
 .main-description-div h1 {
@@ -114,6 +117,7 @@ button:hover {
   font-weight: 400;
 
 }
+
 
 .main-description-div a {
   color: white;
@@ -670,7 +674,7 @@ footer {
   color: #1E1E1E;
   border-radius: 30px;
   font-family: 'Aeonik', sans-serif;
-  width: 30%;
+  width: 35%;
   font-size: 15px;
   font-weight: 400;
 
