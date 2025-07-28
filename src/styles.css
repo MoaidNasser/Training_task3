@@ -198,6 +198,7 @@ button:hover {
   gap: 20px;
   justify-content: center;
   gap: 0;
+  padding-top: 80px;
 }
 
 .main-description-section {
@@ -245,7 +246,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -256,7 +257,7 @@ button:hover {
 }
 
 .logo-carousel .logo-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.015);
   transition: transform 0.3s ease;
   background-color: #00D47E;
 }
