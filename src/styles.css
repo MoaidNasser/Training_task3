@@ -9,6 +9,9 @@ header {
   padding: 0;
   width: 100%;
 }
+a{
+  text-decoration: none;
+}
 
 .logo {
   width: 85px;
@@ -54,7 +57,7 @@ button:hover {
   background-color: #8D959D;
 }
 
-.b1 {
+.button1 {
   padding: 7px;
   background-color: white;
   border: 1px solid #F2F4F4;
@@ -62,7 +65,7 @@ button:hover {
   margin: 5px;
 }
 
-.b2 {
+.button2 {
   padding: 9px;
   background-color: #00D47E;
   border: 1px solid #F2F4F4;
