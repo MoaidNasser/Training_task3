@@ -591,9 +591,8 @@ button:hover {
 }
 
 
-.solve-problem-section-left-side .b2 {
-  min-width: 120px;
-  max-width: 25%;
+.solve-problem-section-left-side .button2 {
+  width: 120px;
   box-sizing: border-box;
 }
 
@@ -718,7 +717,8 @@ footer {
 }
 
 .footer-section-bottom-section {
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 70px
@@ -776,6 +776,7 @@ footer {
   gap: 20px;
   color: #8D959D;
   font-family: 'Aeonik', sans-serif;
+  padding-bottom: 10px;
 }
 
 .footer-section-bottom-section-bottom div {
