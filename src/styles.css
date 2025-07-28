@@ -298,9 +298,17 @@ button:hover {
 .main-services-section .services-container .service-item {
   background-color: white;
   padding: 40px;
+  gap: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
   font-family: 'Aeonik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+ }
+
+.main-services-section .services-container .service-item img {
+  width: 30px;
+  height: 30px;
 }
 
 .main-services-section .services-container .service-item h2 {
