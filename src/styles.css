@@ -140,7 +140,6 @@ button:hover {
   margin-right: 10%;
   border-top-left-radius: 25px;
   width: 40%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 35px;
   position: absolute;
   background-color: white;
