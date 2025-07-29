@@ -9,7 +9,8 @@ header {
   padding: 0;
   width: 100%;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -304,7 +305,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
- }
+}
 
 .main-services-section .services-container .service-item img {
   width: 30px;
