@@ -698,7 +698,7 @@ footer {
 .footer-section-top-section {
   display: flex;
   gap: 130px;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .footer-main-description {
@@ -718,7 +718,7 @@ footer {
 
 .footer-section-bottom-section {
   padding-top: 80px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 70px
