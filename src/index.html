@@ -4,46 +4,46 @@
   <meta charset="utf-8">
   <title>Task2</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="styles.css" rel="stylesheet">
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.solve-problem-section-main-div');
-    const navButtons = document.querySelectorAll('.nav-button');
+      const cards = document.querySelectorAll('.solve-problem-section-main-div');
+      const navButtons = document.querySelectorAll('.nav-button');
 
-    function showCard(index) {
-      cards.forEach(card => {
-        card.classList.remove('active');
-      });
+      function showCard(index) {
+        cards.forEach(card => {
+          card.classList.remove('active');
+        });
+        navButtons.forEach(button => {
+          button.classList.remove('active');
+        });
+
+        if (cards[index]) {
+          cards[index].classList.add('active');
+        }
+        if (navButtons[index]) {
+          navButtons[index].classList.add('active');
+        }
+      }
+
       navButtons.forEach(button => {
-        button.classList.remove('active');
+        button.addEventListener('click', () => {
+          const targetIndex = parseInt(button.dataset.targetCard);
+          showCard(targetIndex);
+        });
       });
 
-      if (cards[index]) {
-        cards[index].classList.add('active');
-      }
-      if (navButtons[index]) {
-        navButtons[index].classList.add('active');
-      }
-    }
-
-    navButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const targetIndex = parseInt(button.dataset.targetCard);
-        showCard(targetIndex);
-      });
+      showCard(0);
     });
-
-    showCard(0);
-  });
   </script>
 </head>
 
 <body>
 <header>
   <div class="div-bar">
-    <div class="logo-container"><img src="/logo.png" alt="Company Logo" class="logo"></div>
+    <div class="logo-container"><img alt="Company Logo" class="logo" src="/logo.png"></div>
 
     <nav>
       <ul>
@@ -69,11 +69,11 @@
       <h1>New Energy<br>for the Future</h1>
       <div style="display: flex;">
         <div>
-        <a href="">Get in touch &nbsp; &#8599;</a>
+          <a href="">Get in touch &nbsp; &#8599;</a>
           <div style="width: 150px; height: 2px; background-color: #F2F4F4;"></div>
         </div>
         <div>
-        <a href="">Our services &nbsp; &#8599;</a>
+          <a href="">Our services &nbsp; &#8599;</a>
           <div style="width: 150px; height: 2px; background-color: #F2F4F4;"></div>
 
         </div>
@@ -98,7 +98,7 @@
 
 
   <div class="header-image-div-s">
-    <img src="/main-s.png" alt="Header small Image" class="header-image-s">
+    <img alt="Header small Image" class="header-image-s" src="/main-s.png">
     <pre>Discover Our<br>  Recent Project</pre>
   </div>
 
@@ -115,19 +115,19 @@
 
     <div class="logo-carousel">
       <div class="logo-item">
-        <img src="/trend-micro-logo.png" alt="Trend Micro Logo">
+        <img alt="Trend Micro Logo" src="/trend-micro-logo.png">
       </div>
       <div class="logo-item">
-        <img src="/telia-cygate-logo.png" alt="Telia Cygate Logo">
+        <img alt="Telia Cygate Logo" src="/telia-cygate-logo.png">
       </div>
       <div class="logo-item">
-        <img src="/orange-logo.png" alt="Orange Business Logo">
+        <img alt="Orange Business Logo" src="/orange-logo.png">
       </div>
       <div class="logo-item">
-        <img src="/headspace-logo.png" alt="Headspace Logo">
+        <img alt="Headspace Logo" src="/headspace-logo.png">
       </div>
       <div class="logo-item">
-        <img src="/medtronic-logo.png" alt="Medtronic Logo">
+        <img alt="Medtronic Logo" src="/medtronic-logo.png">
       </div>
     </div>
   </section>
@@ -210,7 +210,7 @@
         </div>
       </div>
 
-      <div class="trusted-services1-image"><img src="/trusted-sec.png" alt="worker with solar panel"></div>
+      <div class="trusted-services1-image"><img alt="worker with solar panel" src="/trusted-sec.png"></div>
     </div>
   </section>
 
@@ -231,7 +231,7 @@
           <p class="p2 card-author">Jeniffer Kolobaly - <span>CTO EV Medtronic</span></p>
         </div>
         <div class="solve-problem-section-right-side">
-          <img src="/solve-problem-section.png" alt="Solar Carport">
+          <img alt="Solar Carport" src="/solve-problem-section.png">
         </div>
       </div>
 
@@ -246,7 +246,7 @@
           <p class="p2 card-author">Manahan Mana - <span>CTO Hyung Motor</span></p>
         </div>
         <div class="solve-problem-section-right-side">
-          <img src="/solar-roof.png" alt="Solar Roof">
+          <img alt="Solar Roof" src="/solar-roof.png">
         </div>
       </div>
 
@@ -261,7 +261,7 @@
           <p class="p2 card-author">Jean-Luc Picard - <span>Head of Innovation, Orange</span></p>
         </div>
         <div class="solve-problem-section-right-side">
-          <img src="/wind-power.png" alt="Wind Power">
+          <img alt="Wind Power" src="/wind-power.png">
         </div>
       </div>
 
@@ -303,7 +303,7 @@
     <div class="footer-section-bottom-section">
       <div class="footer-section-bottom-section-top">
         <div class="footer-logo-container">
-          <img src="/footer-logo.png" alt="Company Logo" class="logo">
+          <img alt="Company Logo" class="logo" src="/footer-logo.png">
           <h2>Xurya</h2>
         </div>
         <nav>
@@ -316,10 +316,10 @@
           </ul>
         </nav>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/"><img src="/linkedin-icon.png" alt="LinkedIn"></a>
-          <a href="https://x.com/"><img src="/twitter-icon.png" alt="Twitter"></a>
-          <a href="https://www.facebook.com/"><img src="/facebook-icon.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/"><img src="/instagram-icon.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/"><img alt="LinkedIn" src="/linkedin-icon.png"></a>
+          <a href="https://x.com/"><img alt="Twitter" src="/twitter-icon.png"></a>
+          <a href="https://www.facebook.com/"><img alt="Facebook" src="/facebook-icon.png"></a>
+          <a href="https://www.instagram.com/"><img alt="Instagram" src="/instagram-icon.png"></a>
 
         </div>
       </div>
