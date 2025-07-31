@@ -5,8 +5,6 @@
 }
 
 header {
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
 
@@ -60,7 +58,7 @@ button:hover {
 
 .button1 {
   padding: 7px;
-  background-color: white;
+  background-color: #FFFFFFFF;
   border: 1px solid #F2F4F4;
   border-radius: 30px;
   margin: 5px;
@@ -103,20 +101,20 @@ button:hover {
 }
 
 .main-description-div h1 {
-  color: white;
+  color: #FFFFFFFF;
   font-size: 70px;
   font-weight: 100;
 }
 
 .main-description-div p {
-  color: white;
+  color: #FFFFFFFF;
   font-size: 20px;
   font-weight: 400;
 
 }
 
 .main-description-div h6 {
-  color: white;
+  color: #FFFFFFFF;
   font-size: 18px;
   font-weight: 400;
 
@@ -124,7 +122,7 @@ button:hover {
 
 
 .main-description-div a {
-  color: white;
+  color: #FFFFFFFF;
   font-weight: 100;
   font-size: 20px;
   margin-right: 30px;
@@ -142,7 +140,7 @@ button:hover {
   width: 40%;
   padding: 35px;
   position: absolute;
-  background-color: white;
+  background-color: #FFFFFFFF;
   padding-left: 45px;
   bottom: 0;
   right: 0;
@@ -170,7 +168,7 @@ button:hover {
   border-radius: 25px;
   top: 220px;
   left: 1400px;
-  background-color: rgb(141, 149, 157, 0.2);
+  background-color: #8D959D33;
 }
 
 .header-image-div-s img {
@@ -190,7 +188,7 @@ button:hover {
   top: -2px;
   font-family: 'Aeonik', sans-serif;
   font-size: 15px;
-  color: white;
+  color: #FFFFFFFF;
 }
 
 .logo-carousel {
@@ -296,7 +294,7 @@ button:hover {
 }
 
 .main-services-section .services-container .service-item {
-  background-color: white;
+  background-color: #FFFFFFFF;
   padding: 40px;
   gap: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -402,7 +400,7 @@ button:hover {
 }
 
 .trusted-services1-section-grid .grid-item {
-  background-color: white;
+  background-color: #FFFFFFFF;
   padding-top: 40px;
   padding-left: 40px;
   padding-bottom: 10px;
@@ -530,7 +528,7 @@ button:hover {
   padding: 9px;
   background-color: #00D47E;
   border: 1px solid #F2F4F4;
-  color: white;
+  color: #FFFFFFFF;
   border-radius: 30px;
   width: 25%;
 }
@@ -644,7 +642,7 @@ button:hover {
 
 footer {
   width: 100%;
-  background-color: black;
+  background-color: #000000FF;
 }
 
 .footer-section-main-div {
@@ -680,7 +678,7 @@ footer {
 
 .footer-section-right-side button {
   padding: 18px;
-  background-color: white;
+  background-color: #FFFFFFFF;
   border: none;
   color: #1E1E1E;
   border-radius: 30px;
@@ -730,7 +728,7 @@ footer {
   height: auto;
   border-radius: 50%;
   margin: 5px;
-  background-color: black;
+  background-color: #000000FF;
 }
 
 .footer-section-bottom-section-top {
@@ -766,7 +764,7 @@ footer {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: black;
+  background-color: #000000FF;
 }
 
 .footer-section-bottom-section-bottom {
